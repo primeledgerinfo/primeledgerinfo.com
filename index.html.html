@@ -1,193 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>PrimeLedger | Accounting | Tax | Compliance | Consulting</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PrimeLedger | Accounting, Tax, Compliance & Consulting</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- SEO -->
+  <meta name="description" content="PrimeLedger provides professional accounting, tax, GST, compliance, payroll, audit & virtual CFO services for MSMEs and startups in India.">
+  <meta name="keywords" content="CA firm, accounting services, GST filing, tax consultant, MSME compliance, payroll services, virtual CFO, PrimeLedger">
+  <meta name="author" content="PrimeLedger">
 
-<style>
-:root {
-  --primary:#0b2c4d;
-  --gold:#c9a34d;
-  --bg:#f6f8fb;
-}
-*{box-sizing:border-box;}
-html{scroll-behavior:smooth;}
-body{margin:0;font-family:Poppins, sans-serif;background:var(--bg);color:#222;}
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-.navbar{
-  position:sticky;top:0;z-index:999;
-  background:#fff;display:flex;justify-content:space-between;align-items:center;
-  padding:10px 20px;box-shadow:0 2px 10px rgba(0,0,0,0.08);
-}
-.brand{display:flex;align-items:center;font-weight:600;color:var(--primary);text-decoration:none;}
-.brand img{height:42px;margin-right:10px;}
-.nav-links a{margin-left:20px;text-decoration:none;color:#333;font-weight:500;}
-.nav-links a:hover{color:var(--primary);}
-
-.hero{
-  background:linear-gradient(135deg,#0b2c4d,#123d6b);
-  color:#fff;padding:90px 20px;text-align:center;
-}
-.hero h1{font-size:38px;margin-bottom:10px;}
-.btn-primary{
-  display:inline-block;background:var(--gold);color:#fff;padding:12px 26px;
-  border-radius:6px;text-decoration:none;font-weight:600;margin-top:15px;
-}
-
-.section{padding:70px 20px;}
-.container{max-width:1100px;margin:auto;}
-h2{color:var(--primary);margin-bottom:20px;}
-h2:after{content:"";width:60px;height:3px;background:var(--gold);display:block;margin-top:6px;}
-
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;}
-.card{background:#fff;padding:25px;border-radius:10px;box-shadow:0 6px 20px rgba(0,0,0,0.06);}
-
-.badges span{
-  display:inline-block;background:#fff;padding:10px 15px;border-radius:20px;
-  margin:5px 8px;font-weight:600;color:var(--primary);
-}
-
-.process li{margin-bottom:10px;font-weight:500;}
-
-.cta{background:var(--primary);color:#fff;text-align:center;padding:60px 20px;}
-
-footer{background:#081f36;color:#ccc;text-align:center;padding:20px;font-size:14px;}
-
-.floating{
-  position:fixed;right:18px;bottom:20px;display:flex;flex-direction:column;gap:10px;z-index:999;
-}
-.floating a{
-  padding:12px 16px;border-radius:50px;color:#fff;font-weight:600;text-decoration:none;
-  box-shadow:0 4px 12px rgba(0,0,0,0.25);font-size:14px;
-}
-.call{background:#27ae60;}
-.whatsapp{background:#25D366;}
-.email{background:#3498db;}
-
-form input, form textarea{
-  width:100%;padding:12px;margin-bottom:12px;border-radius:6px;border:1px solid #ccc;
-}
-form button{border:none;}
-</style>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- NAVBAR -->
-<div class="navbar">
-  <a href="#home" class="brand">
-    <img src="logo.png" alt="PrimeLedger Logo">
-    PrimeLedger
-  </a>
-  <div class="nav-links">
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#process">Process</a>
-    <a href="#testimonials">Testimonials</a>
-    <a href="#contact">Contact</a>
+<header>
+  <div class="container nav">
+    <div class="logo">
+      <span class="pl">PL</span>
+      <div>
+        <h1>PrimeLedger</h1>
+        <small>Accounting | Tax | Compliance | Consulting</small>
+      </div>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#testimonials">Clients</a>
+      <a href="#contact" class="cta">Free Consultation</a>
+      <button id="darkToggle" title="Toggle Dark Mode">🌙</button>
+    </nav>
   </div>
-</div>
+</header>
 
-<!-- HERO -->
-<section id="home" class="hero">
-  <h1>Accounting | Tax | Compliance | Consulting</h1>
-  <p>Your trusted partner for MSMEs, startups & professionals</p>
-  <a href="#contact" class="btn-primary">Book Free Consultation</a>
+<section class="hero">
+  <div class="container">
+    <h2>Premium Accounting & Compliance Partner for MSMEs & Startups</h2>
+    <p>CA-guided • Confidential & Secure • End-to-End Financial Support</p>
+    <a href="#contact" class="btn">Get Free 15-Min Compliance Review</a>
+  </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="section">
+<section id="about" class="section light">
   <div class="container">
     <h2>About PrimeLedger</h2>
-    <p>We provide end-to-end accounting, tax & compliance support for MSMEs, startups & professionals.</p>
+    <p>
+      PrimeLedger is a professional accounting and consulting firm delivering end-to-end financial, tax,
+      compliance, payroll, audit support and Virtual CFO services to individuals, startups and MSMEs.
+      We support businesses across their full lifecycle – from setup to strategic growth.
+    </p>
+    <p>
+      At PrimeLedger, we don’t just manage numbers — we help businesses make smarter financial decisions
+      and build sustainable growth.
+    </p>
+  </div>
+</section>
 
-    <div class="badges">
-      <span>✅ 100+ MSMEs Served</span>
-      <span>✅ CA-Guided Process</span>
-      <span>✅ Confidential & Secure</span>
+<section class="section">
+  <div class="container grid-2">
+    <div>
+      <h3>Vision</h3>
+      <p>To build a globally trusted accounting and consulting firm empowering MSMEs with world-class financial management.</p>
+    </div>
+    <div>
+      <h3>Mission</h3>
+      <p>To simplify accounting, taxation, compliance and finance through transparent, technology-driven processes.</p>
     </div>
   </div>
 </section>
 
-<!-- SERVICES -->
-<section id="services" class="section">
+<section id="services" class="section light">
   <div class="container">
     <h2>Our Services</h2>
     <div class="grid">
-      <div class="card">🧾 Accounting & Bookkeeping</div>
-      <div class="card">💼 Income Tax, GST, TDS</div>
-      <div class="card">🏢 Business Registration & Compliance</div>
-      <div class="card">🧠 Virtual CFO</div>
-      <div class="card">📑 CMA, Project Reports, Loans</div>
-      <div class="card">📈 Business Consulting</div>
-    </div>
-    <p><strong>Pricing starting from ₹X/month</strong></p>
-  </div>
-</section>
-
-<!-- PROCESS -->
-<section id="process" class="section">
-  <div class="container">
-    <h2>How We Work</h2>
-    <ol class="process">
-      <li>Understand your business</li>
-      <li>Setup accounting & compliance</li>
-      <li>Monthly review & reporting</li>
-      <li>Growth & profit advisory</li>
-    </ol>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section id="testimonials" class="section">
-  <div class="container">
-    <h2>Client Testimonials</h2>
-    <div class="grid">
-      <div class="card">“Very professional & reliable service.”</div>
-      <div class="card">“Best finance support for MSMEs.”</div>
-      <div class="card">“Clear communication and timely compliance.”</div>
+      <div class="card">Accounting & Bookkeeping</div>
+      <div class="card">GST, Income Tax & TDS</div>
+      <div class="card">Business Setup & Registrations</div>
+      <div class="card">Payroll & HR Compliance</div>
+      <div class="card">Virtual CFO Services</div>
+      <div class="card">Audit & Assurance Support</div>
+      <div class="card">Project Reports & CMA</div>
+      <div class="card">Business Consulting & Advisory</div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
+<section id="why" class="section">
+  <div class="container">
+    <h2>Why PrimeLedger</h2>
+    <ul class="why-list">
+      <li>End-to-end financial support under one roof</li>
+      <li>MSME-focused, business-first advisory</li>
+      <li>Clear communication & transparent pricing</li>
+      <li>High confidentiality & professional ethics</li>
+      <li>Technology-enabled workflows</li>
+      <li>Long-term partnership mindset</li>
+    </ul>
+  </div>
+</section>
+
+<section id="testimonials" class="section light">
+  <div class="container">
+    <h2>What Clients Say</h2>
+    <div class="slider">
+      <div class="slide active">“PrimeLedger handles our GST & compliance smoothly. Very professional.” – MSME Owner</div>
+      <div class="slide">“Feels like having an in-house finance team.” – Startup Founder</div>
+      <div class="slide">“Clear communication and timely filings. Highly recommended.” – Retail Business</div>
+    </div>
+  </div>
+</section>
+
 <section id="contact" class="section">
   <div class="container">
-    <h2>Contact Us</h2>
-    <p>📞 81239 37745 | 💬 74113 73153 | ✉️ primeledgerinfo@gmail.com</p>
-
-    <iframe src="https://www.google.com/maps?q=Mangalore&output=embed" width="100%" height="300" style="border:0;"></iframe>
-
-    <h3>Quick Enquiry</h3>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <input type="tel" placeholder="Your Phone" required>
-      <textarea placeholder="Your Requirement" rows="4"></textarea>
-      <button class="btn-primary">Send Enquiry</button>
+    <h2>Book Free Consultation</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="tel" id="phone" placeholder="Mobile Number" required>
+      <input type="email" id="email" placeholder="Email Address" required>
+      <textarea id="message" placeholder="Your Requirement" required></textarea>
+      <button type="submit">Send on WhatsApp</button>
     </form>
   </div>
 </section>
 
-<!-- CTA -->
-<div class="cta">
-  <h2>🎁 Free 15-minute Compliance Audit</h2>
-  <a href="https://wa.me/917411373153?text=Hi%20PrimeLedger,%20I%20need%20accounting%20support" class="btn-primary">Chat on WhatsApp</a>
-</div>
-
 <footer>
-© 2026 PrimeLedger | Serving India & Global Clients
+  <p>© 2026 PrimeLedger. All rights reserved.</p>
 </footer>
 
-<!-- FLOATING BUTTONS -->
-<div class="floating">
-  <a href="tel:+918123937745" class="call">📞 Call</a>
-  <a href="https://wa.me/917411373153?text=Hi%20PrimeLedger,%20I%20need%20accounting%20support" class="whatsapp">💬 WhatsApp</a>
-  <a href="mailto:primeledgerinfo@gmail.com" class="email">✉️ Email</a>
-</div>
+<!-- Floating buttons -->
+<a href="https://wa.me/917411373153" class="float whatsapp" target="_blank">💬</a>
+<a href="tel:+917411373153" class="float call">📞</a>
+<a href="mailto:primeledgerinfo@gmail.com" class="float email">✉️</a>
 
+<script src="script.js"></script>
 </body>
 </html>
